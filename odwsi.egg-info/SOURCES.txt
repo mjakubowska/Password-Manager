@@ -1,0 +1,8 @@
+setup.py
+odwsi/__init__.py
+odwsi/accounts.py
+odwsi.egg-info/PKG-INFO
+odwsi.egg-info/SOURCES.txt
+odwsi.egg-info/dependency_links.txt
+odwsi.egg-info/requires.txt
+odwsi.egg-info/top_level.txt
