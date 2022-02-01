@@ -26,7 +26,7 @@ class ShowPasswordsPswdForm(FlaskForm):
 
 class SharePasswordForm(FlaskForm):
     website = SelectField(validators={InputRequired()})
-    username = StringField(validators={InputRequired(), Length(min=4, max=20), Regexp(regex=reg_val)}, render_kw={"placeholder": "Email"})
+    username = StringField(validators={InputRequired(), Length(min=4, max=80), Regexp(regex=reg_val)}, render_kw={"placeholder": "Email"})
     master_password = PasswordField(validators={InputRequired(), Length(min=4, max=20), Regexp(regex=reg_val)}, render_kw={"placeholder": "Password"})
     acc_password = PasswordField(validators={InputRequired(), Length(min=4, max=20), Regexp(regex=reg_val)}, render_kw={"placeholder": "Account password"})
     submit = SubmitField("Share")
